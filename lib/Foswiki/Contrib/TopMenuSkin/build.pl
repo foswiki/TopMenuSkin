@@ -4,6 +4,6 @@ BEGIN {
     unshift @INC, $pc;
   }
 }
-use TWiki::Contrib::Build;
-$build = new TWiki::Contrib::Build("TopMenuSkin" );
+use Foswiki::Contrib::Build;
+$build = new Foswiki::Contrib::Build("TopMenuSkin" );
 $build->build($build->{target});

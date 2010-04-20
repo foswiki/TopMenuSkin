@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="TWikiContributor" date="1271719989" format="1.1" version="$Rev$"}%
+%META:TOPICINFO{author="ProjectContributor" date="1271719989" format="1.1" version="$Rev$"}%
 ---+!! !TopMenuSkin
 
 The !TopMenuSkin adds pulldown menus to the PatternSkin.
@@ -191,7 +191,6 @@ This skin is based on PatternSkin, and the same rules for customization apply.
 |  Dependencies: | TWiki 4.2 or later; TWiki:Plugins/PatternSkin; TWiki:Plugins/JQueryPlugin |
 |  Skin Home: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC% |
 |  Feedback: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC%Dev |
-|  Appraisal: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC%Appraisal |
 
 __Related topics:__ WebTopMenu, TopMenuSkinDefaultWebTopMenu, TopMenuSkinHomeMenu, TopMenuSkinTopBar, TopMenuSkinTopicMenu, %SYSTEMWEB%.TWikiSkins, %SYSTEMWEB%.TWikiSkinBrowser, %SYSTEMWEB%.UserDocumentationCategory, %SYSTEMWEB%.AdminDocumentationCategory
 
