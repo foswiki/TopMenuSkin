@@ -60,8 +60,8 @@ __NOTE:__ The pulldown menus only work if the Foswiki:Extensions.JQueryPlugin is
 This section defines the CSS and !JavaScript. ([[%SCRIPTURL{view}%/%WEB%/%TOPIC%?raw=on][View Raw]] to see the source.)
 
 %STARTINCLUDE%<!--<pre>-->
-<link rel="stylesheet" href="%PUBURLPATH%/System/JQueryPlugin/jquery-all.css" type="text/css" media="all" />
-<script type="text/javascript" src="%PUBURLPATH%/System/JQueryPlugin/jquery-all.js"></script>
+<link rel="stylesheet" href="%PUBURLPATH%/%SYSTEMWEB%/JQueryPlugin/jquery-all.css" type="text/css" media="all" />
+<script type="text/javascript" src="%PUBURLPATH%/%SYSTEMWEB%/JQueryPlugin/jquery-all.js"></script>
 <script type="text/javascript">
 var twtimeout = 600;
 var twclosetimer = null;
