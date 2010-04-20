@@ -53,15 +53,15 @@ Renders as:
       * [[SearchHelp][Search help]]
 </div>
 
-__NOTE:__ The pulldown menus only work if the TWiki:Plugins/JQueryPlugin is installed.
+__NOTE:__ The pulldown menus only work if the Foswiki:Extensions.JQueryPlugin is installed.
 
 ---++ CSS and !JavaScript
 
 This section defines the CSS and !JavaScript. ([[%SCRIPTURL{view}%/%WEB%/%TOPIC%?raw=on][View Raw]] to see the source.)
 
 %STARTINCLUDE%<!--<pre>-->
-<link rel="stylesheet" href="%PUBURLPATH%/TWiki/JQueryPlugin/jquery-all.css" type="text/css" media="all" />
-<script type="text/javascript" src="%PUBURLPATH%/TWiki/JQueryPlugin/jquery-all.js"></script>
+<link rel="stylesheet" href="%PUBURLPATH%/System/JQueryPlugin/jquery-all.css" type="text/css" media="all" />
+<script type="text/javascript" src="%PUBURLPATH%/System/JQueryPlugin/jquery-all.js"></script>
 <script type="text/javascript">
 var twtimeout = 600;
 var twclosetimer = null;
@@ -158,16 +158,15 @@ document.onclick = twTopMenuClose;
 
 ---++ Installation
 
-*Note:* You do not need to install anything on the browser to use this skin. The following instructions are for the administrator who installs the skin on the server where TWiki is running.
+*Note:* You do not need to install anything on the browser to use this skin. The following instructions are for the administrator who installs the skin on the server where Foswiki is running.
 
    * Download the ZIP file from the Skin homepage (see below)
-   * Unzip ==%TOPIC%.zip== in your twiki installation directory
-   * To turn on the skin, write in !Main.TWikiPreferences: %BR%
+   * Unzip ==%TOPIC%.zip== in your Foswiki installation directory
+   * To turn on the skin, write in !Main.SitePreferences: %BR%
      =* Set SKIN = topmenu, pattern=
    * [[%SCRIPTURL{"view"}%/%WEB%/%TOPIC%?skin=topmenu,pattern][Test if installed]]
    * *Notes:*
-      * Upgrading existing TWiki: This skin automatically shows a [[TopMenuSkinDefaultWebTopMenu][default menu]] in each web. If you have customized WebLeftBar topics you can create WebTopMenu topics in those webs to get the same top menu navigation as the in the left bar. Base WebTopMenu on [[_default.WebTopMenu]] and add bullets as needed. Bullets must be of format =[<nop>[...][...]]= or =&lt;a href="..."&gt;...&lt;/a&gt;=, without any text next to the link.
-      * Using this skin on TWiki 4.2 and 4.3: This skin depends on TWiki 5.0 specific feature =%<nop>WEB{format="$current"}%= to show the current web in the Web menu. To use this skin on TWiki 4.2 or 4.3, remove the parameter from the WEB variable (to show only =%<nop>WEB%=), or apply patch TWiki:Item6424 (to add the format parameter feature).
+      * Upgrading existing Foswiki: This skin automatically shows a [[TopMenuSkinDefaultWebTopMenu][default menu]] in each web. If you have customized WebLeftBar topics you can create WebTopMenu topics in those webs to get the same top menu navigation as the in the left bar. Base WebTopMenu on [[_default.WebTopMenu]] and add bullets as needed. Bullets must be of format =[<nop>[...][...]]= or =&lt;a href="..."&gt;...&lt;/a&gt;=, without any text next to the link.
 
 ---++ Creating your own look
 
@@ -179,7 +178,7 @@ This skin is based on PatternSkin, and the same rules for customization apply.
 
 <!-- Note on Screenshot: Please attach a 600x130 pixel screenshot and a full screen shot to the Skin topic, then update the href and img src to reflect the names -->
 |  Skin Author: | TWiki:Main/PeterThoeny |
-|  Copyright: | &copy; 2010, TWiki:Main/PeterThoeny, [[http://twiki.net][Twiki, Inc.]] |
+|  Copyright: | &copy; 2010, TWiki:Main/PeterThoeny |
 |  License: | GPL ([[http://www.gnu.org/copyleft/gpl.html][GNU General Public License]]) |
 |  Description: | Top-menu skin |
 |  Screenshot: | <a href="%ATTACHURL%/fullscreen.png"><img src="%ATTACHURL%/screenshot.png" alt="Click for full screen image" width="600" height="130" /></a> |
@@ -188,11 +187,11 @@ This skin is based on PatternSkin, and the same rules for customization apply.
 |  Skin Version: | 2010-04-19 (v1.0) |
 |  Change History: | <!-- specify latest version first -->&nbsp; |
 |  2010-04-19: | Initial release (v1.0) |
-|  Dependencies: | TWiki 4.2 or later; TWiki:Plugins/PatternSkin; TWiki:Plugins/JQueryPlugin |
-|  Skin Home: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC% |
-|  Feedback: | http://TWiki.org/cgi-bin/view/Plugins/%TOPIC%Dev |
+|  Dependencies: | Foswiki 1.0.0 or later; Foswiki:Extensions.PatternSkin; Foswiki:Extensions.JQueryPlugin |
+|  Skin Home: | http://foswiki.org/Extensions/%TOPIC% |
+|  Support: | http://foswiki.org/Support/%TOPIC% |
 
-__Related topics:__ WebTopMenu, TopMenuSkinDefaultWebTopMenu, TopMenuSkinHomeMenu, TopMenuSkinTopBar, TopMenuSkinTopicMenu, %SYSTEMWEB%.TWikiSkins, %SYSTEMWEB%.TWikiSkinBrowser, %SYSTEMWEB%.UserDocumentationCategory, %SYSTEMWEB%.AdminDocumentationCategory
+__Related topics:__ WebTopMenu, TopMenuSkinDefaultWebTopMenu, TopMenuSkinHomeMenu, TopMenuSkinTopBar, TopMenuSkinTopicMenu, [[%SYSTEMWEB%.Skins]], %SYSTEMWEB%.SkinBrowser, %SYSTEMWEB%.UserDocumentationCategory, %SYSTEMWEB%.AdminDocumentationCategory
 
-%META:FILEATTACHMENT{name="fullscreen.png" attachment="fullscreen.png" attr="h" comment="" date="1271719988" path="fullscreen.png" size="36985" user="TWikiContributor" version="1"}%
-%META:FILEATTACHMENT{name="screenshot.png" attachment="screenshot.png" attr="h" comment="" date="1271719875" path="screenshot.png" size="15762" user="TWikiContributor" version="1"}%
+%META:FILEATTACHMENT{name="fullscreen.png" attachment="fullscreen.png" attr="h" comment="" date="1271719988" path="fullscreen.png" size="36985" user="ProjectContributor" version="1"}%
+%META:FILEATTACHMENT{name="screenshot.png" attachment="screenshot.png" attr="h" comment="" date="1271719875" path="screenshot.png" size="15762" user="ProjectContributor" version="1"}%

@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="TWikiContributor" date="1271653161" format="1.1" version="$rev$"}%
+%META:TOPICINFO{author="ProjectContributor" date="1271653161" format="1.1" version="$rev$"}%
 %META:TOPICPARENT{name="TopMenuSkin"}%
 ---+ Default Web Top Menu of !TopMenuSkin
 
