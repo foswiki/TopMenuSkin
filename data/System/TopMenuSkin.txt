@@ -41,7 +41,7 @@ To preserve the "you are here" breadcrumb, it is important to add additional pul
 Example !WebTopBar menu structure with additional "Bugs" pulldown menu:
 <verbatim>
 %INCLUDE{%SYSTEMWEB%.TopMenuSkinHomeMenu}%
-   * [[%BASEWEB%.%HOMETOPIC%][<img src="%ICONURL{web-bg}%" border="0" alt="" width="16" height="16" style="background-color:%WEBBGCOLOR%" /> <nop>%MAKETEXT{"[_1] Web" args="%BASEWEB{format="$current"}%"}% %ICON{menu-down}%]]
+   * [[%BASEWEB%.%HOMETOPIC%][<img src="%ICONURL{web-bg}%" border="0" alt="" width="16" height="16" style="background-color:%WEBBGCOLOR%" /> <nop>%MAKETEXT{"[_1] Web" args="%BASEWEB{format="$current"}%"}% %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
       * [[%SCRIPTURLPATH{"view"}%/%BASEWEB%/WebCreateNewTopic?topicparent=%BASETOPIC%][ %ICON{"newtopic"}% %MAKETEXT{"Create New Topic"}%]]
       * [[%BASEWEB%.WebTopicList][ %ICON{"index"}% %MAKETEXT{"Index"}%]]
       * [[%BASEWEB%.WebSearch][ %ICON{"searchtopic"}% %MAKETEXT{"Search"}%]]
@@ -51,7 +51,7 @@ Example !WebTopBar menu structure with additional "Bugs" pulldown menu:
       * [[%BASEWEB%.WebStatistics][ %ICON{"statistics"}% %MAKETEXT{"Statistics"}%]]
       * [[%BASEWEB%.WebPreferences][ %ICON{"wrench"}% %MAKETEXT{"Preferences"}%]]
 %INCLUDE{%SYSTEMWEB%.TopMenuSkinTopicMenu}%
-   * [[BugTracker][%ICON{bug}% Bugs %ICON{menu-down}%]]
+   * [[BugTracker][%ICON{bug}% Bugs %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
       * [[NewReport][Create bug report]]
       * [[OpenBugs][Open bugs]]
       * [[ConfirmedBugs][Confirmed bugs]]
@@ -72,10 +72,10 @@ A menu-bar can be added anywhere in a topic:
 Example:<verbatim>
 %INCLUDE{"%SYSTEMWEB%.TopMenuSkin"}%
 <div class="twTopMenuTab">
-   * [[WebHome][%ICON{home}% Home %ICON{menu-down}%]]
+   * [[WebHome][%ICON{home}% Home %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
       * [[WebNotify][Subscribe]]
       * [[WebStatistics][Statistics]]
-   * [[WebSearch][%ICON{searchtopic}% Search %ICON{menu-down}%]]
+   * [[WebSearch][%ICON{searchtopic}% Search %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
       * [[WebSearchAdvanced][Advanced search]]
       * [[SearchHelp][Search help]]
 </div>
@@ -83,10 +83,10 @@ Example:<verbatim>
 
 Renders as:
 <div class="twTopMenuTab">
-   * [[WebHome][%ICON{home}% Home %ICON{menu-down}%]]
+   * [[WebHome][%ICON{home}% Home %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
       * [[WebNotify][Subscribe]]
       * [[WebStatistics][Statistics]]
-   * [[WebSearch][%ICON{searchtopic}% Search %ICON{menu-down}%]]
+   * [[WebSearch][%ICON{searchtopic}% Search %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
       * [[WebSearchAdvanced][Advanced search]]
       * [[SearchHelp][Search help]]
 </div>
@@ -116,7 +116,7 @@ function twTopMenuTimer() {
 function twTopMenuCancelTimer() {
  if(twclosetimer) { window.clearTimeout(twclosetimer); twclosetimer = null; } 
 }
-$(document).ready(function() {
+$(function() {
  $('.twTopMenuTab > ul li').bind('mouseover', twTopMenuOpen);
  $('.twTopMenuTab > ul').bind('mouseout',  twTopMenuTimer);
 });
@@ -209,7 +209,6 @@ document.onclick = twTopMenuClose;
    * *Note* on using this skin on TWiki 4.2 and 4.3:
       * This skin depends on TWiki 5.0 specific feature =%<nop>WEB{format="$current"}%= to show the current web in the Web menu. To use this skin on TWiki 4.2 or 4.3, remove the parameter from the WEB variable (to show only =%<nop>WEB%=), or apply patch TWiki:Item6424 (to add the format parameter feature).
       * Apply patch TWikibug:Item6430 so that Edit and Attach buttons point to the current topic instead of !TopMenuSkinTopBar.
-      * Attach %ATTACHURL%/menu-down.gif to %SYSTEMWEB%.DocumentGraphics.
       * If you have more than 30 webs, apply TWikibug:Item6429 to limit the number of webs shown in the "Home" menu.
 
 ---++ Creating your own look

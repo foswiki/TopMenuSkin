@@ -17,7 +17,7 @@ Top bar of TopMenuSkin, replacing WebTopBar.
  else="$percntINCLUDE{%SYSTEMWEB%.TopMenuSkinDefaultWebTopMenu}$percnt"
 }%
 </div></td><td><div class="twTopMenuTab" style="float:right">
-   * [[%WIKIUSERNAME%][ %ICON{"person"}% %MAKETEXT{"Account"}% %ICON{menu-down}%]]
+   * [[%WIKIUSERNAME%][ %ICON{"person"}% %MAKETEXT{"Account"}% %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
 %IF{
  "context authenticated"
  then='      * [[%WIKIUSERNAME%][%SPACEOUT{%WIKINAME%}%]]'

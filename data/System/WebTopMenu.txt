@@ -8,7 +8,7 @@ This topic defines the menu structure of the <nop>%WEB% web, used by the [[TopMe
 %INCLUDE{"%SYSTEMWEB%.TopMenuSkin"}%
 <div class="twTopMenuTab">%STARTINCLUDE%
 %INCLUDE{%SYSTEMWEB%.TopMenuSkinHomeMenu}%
-   * [[%BASEWEB%.%HOMETOPIC%][ <img src="%ICONURL{web-bg}%" border="0" alt="" width="16" height="16" style="background-color:%WEBBGCOLOR%" /> <nop>%MAKETEXT{"[_1] Web" args="%BASEWEB{format="$current"}%"}% %ICONURL{menu-down}% ]]
+   * [[%BASEWEB%.%HOMETOPIC%][ <img src="%ICONURL{web-bg}%" border="0" alt="" width="16" height="16" style="background-color:%WEBBGCOLOR%" /> <nop>%MAKETEXT{"[_1] Web" args="%BASEWEB{format="$current"}%"}% %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif ]]
       * [[%BASEWEB%.UserRegistration][ %ICON{"edittable"}% %MAKETEXT{"User registration"}%]]
       * %IF{"istopic '%USERSWEB%.WikiUsers'" else=" $percntICON{\"person\"}$percnt $percntMAKETEXT{\"Users\"}$percnt" then="[[$percntUSERSWEB$percnt.WikiUsers][ $percntICON{\"person\"}$percnt $percntMAKETEXT{\"Users\"}$percnt]]"}%
       * [[%USERSWEB%.WikiGroups][ %ICON{"group"}% %MAKETEXT{"Groups"}%]]
@@ -20,8 +20,8 @@ This topic defines the menu structure of the <nop>%WEB% web, used by the [[TopMe
       * [[%BASEWEB%.WebStatistics][ %ICON{"statistics"}% %MAKETEXT{"Statistics"}%]]
       * [[%BASEWEB%.WebPreferences][ %ICON{"wrench"}% %MAKETEXT{"Preferences"}%]]
 %INCLUDE{%SYSTEMWEB%.TopMenuSkinTopicMenu}%
-   * [[UserDocumentationCategory][%MAKETEXT{"User Reference"}% %ICONURL{menu-down}% ]]
-      * [[ATasteOfFoswiki]]
+   * [[UserDocumentationCategory][%MAKETEXT{"User Reference"}% %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif ]]
+      * [[BeginnersStartHere]]
       * [[TextFormattingRules]]
       * [[Macros]]
       * [[FormattedSearch]]
@@ -29,7 +29,7 @@ This topic defines the menu structure of the <nop>%WEB% web, used by the [[TopMe
       * [[DocumentGraphics]]
       * [[SkinBrowser]]
       * [[InstalledPlugins]]
-   * [[AdminToolsCategory][%MAKETEXT{"Admin Maintenance"}% %ICONURL{menu-down}% ]]
+   * [[AdminToolsCategory][%MAKETEXT{"Admin Maintenance"}% %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif ]]
       * [[ReferenceManual][Reference Manual]]
       * [[InterWikis]]
       * [[ManagingUsers]]
@@ -37,7 +37,7 @@ This topic defines the menu structure of the <nop>%WEB% web, used by the [[TopMe
       * [[SiteTools]]
       * [[%WIKIPREFSTOPIC%]]
       * [[%WEBPREFSTOPIC%]]
-   * [[CategoryCategory][%MAKETEXT{"Categories"}% %ICONURL{menu-down}% ]]
+   * [[CategoryCategory][%MAKETEXT{"Categories"}% %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif ]]
       * [[AdminDocumentationCategory][Admin Documentation]]
       * [[AdminToolsCategory][Admin Tools]]
       * [[DeveloperDocumentationCategory][Developer Doc]]
