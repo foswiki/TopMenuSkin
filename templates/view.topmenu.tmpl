@@ -1,4 +1,5 @@
 %TMPL:INCLUDE{"view"}%
+
 %TMPL:DEF{"topbar"}%<div id="twTopBar">%INCLUDE{"%SYSTEMWEB%.TopMenuSkinTopBar"}%</div><!-- /twTopBar-->%TMPL:END%
 
 %TMPL:DEF{"topbardimensions"}%
@@ -11,7 +12,9 @@
   height: 80px; /* top bar height; make room for header columns */
   background: #DFE2E8;
 }
-#twTopBar img {
+#twTopBar img,
+#twTopBar a,
+#twTopBar a:hover {
   background-color: transparent;
 }
 #twTopBarButtons {
