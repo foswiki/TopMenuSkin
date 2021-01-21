@@ -41,7 +41,7 @@ To preserve the "you are here" breadcrumb, it is important to add additional pul
 Example !WebTopBar menu structure with additional "Bugs" pulldown menu:
 <verbatim>
 %INCLUDE{%SYSTEMWEB%.TopMenuSkinHomeMenu}%
-   * [[%BASEWEB%.%HOMETOPIC%][<img src="%ICONURL{web-bg}%" border="0" alt="" width="16" height="16" style="background-color:%WEBBGCOLOR%" /> <nop>%MAKETEXT{"[_1] Web" args="%BASEWEB{format="$current"}%"}% %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
+   * [[%BASEWEB%.%HOMETOPIC%][<img src="%ICONURL{web-bg}%" border="0" alt="" width="16" height="16" style="background-color:%WEBBGCOLOR%" /> <nop>%MAKETEXT{"[_1] Web" args="%BASEWEB{format="$current"}%"}% <img src='%PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif' />]]
       * [[%SCRIPTURLPATH{"view"}%/%BASEWEB%/WebCreateNewTopic?topicparent=%BASETOPIC%][ %ICON{"newtopic"}% %MAKETEXT{"Create New Topic"}%]]
       * [[%BASEWEB%.WebTopicList][ %ICON{"index"}% %MAKETEXT{"Index"}%]]
       * [[%BASEWEB%.WebSearch][ %ICON{"searchtopic"}% %MAKETEXT{"Search"}%]]
@@ -51,7 +51,7 @@ Example !WebTopBar menu structure with additional "Bugs" pulldown menu:
       * [[%BASEWEB%.WebStatistics][ %ICON{"statistics"}% %MAKETEXT{"Statistics"}%]]
       * [[%BASEWEB%.WebPreferences][ %ICON{"wrench"}% %MAKETEXT{"Preferences"}%]]
 %INCLUDE{%SYSTEMWEB%.TopMenuSkinTopicMenu}%
-   * [[BugTracker][%ICON{bug}% Bugs %PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif]]
+   * [[BugTracker][%ICON{bug}% Bugs <img src='%PUBURL%/%SYSTEMWEB%/TopMenuSkin/menu-down.gif' />]]
       * [[NewReport][Create bug report]]
       * [[OpenBugs][Open bugs]]
       * [[ConfirmedBugs][Confirmed bugs]]
